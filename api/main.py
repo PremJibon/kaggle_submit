@@ -188,10 +188,10 @@ HTML = """<!DOCTYPE html>
 <meta property="og:description" content="Organize, search, and synthesize your knowledge with AI. Built with Google ADK, multi-agent systems, MCP servers, and security features.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://knowledge-assistant-rho.vercel.app">
-<meta property="og:image" content="https://raw.githubusercontent.com/PremJibon/kaggle_submit/main/thumbnail.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/PremJibon/kaggle_submit/main/thumbnail.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="AI Knowledge Assistant Dashboard">
+<meta property="og:image:alt" content="AI Knowledge Assistant - Multi-Agent System Dashboard">
 <meta property="og:site_name" content="AI Knowledge Assistant">
 <meta property="og:locale" content="en_US">
 
@@ -199,8 +199,8 @@ HTML = """<!DOCTYPE html>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Knowledge Assistant - Multi-Agent System with Google ADK">
 <meta name="twitter:description" content="Organize, search, and synthesize your knowledge with AI. Built with Google ADK, multi-agent systems, MCP servers, and security features.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/PremJibon/kaggle_submit/main/thumbnail.png">
-<meta name="twitter:image:alt" content="AI Knowledge Assistant Dashboard">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/PremJibon/kaggle_submit/main/thumbnail.svg">
+<meta name="twitter:image:alt" content="AI Knowledge Assistant - Multi-Agent System Dashboard">
 
 <!-- Additional Meta -->
 <meta name="description" content="AI Personal Knowledge Assistant - A multi-agent system for organizing, retrieving, and synthesizing information. Built with Google ADK, FastAPI, and deployed on Vercel.">
