@@ -197,7 +197,7 @@ async def chat(body: ChatRequest, user=Depends(get_current_user)):
     return result
 
 
-PAGE = r"""<!DOCTYPE html>
+PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -344,7 +344,7 @@ function renderChat(c){
   c.innerHTML=`
   <div class="card">
     <h2>Chat with Assistant</h2>
-    <div class="chat-history" id="ch">${chatHist.map(m=>`<div class="chat-msg ${m.role}"><div class="bubble">${m.text.replace(/\n/g,'<br>')}</div></div>`).join('')}</div>
+    <div class="chat-history" id="ch">${chatHist.map(m=>`<div class="chat-msg ${m.role}"><div class="bubble">${m.text.replace(/\\n/g,'<br>')}</div></div>`).join('')}</div>
     <div class="chat-box">
       <textarea id="ci" placeholder="Try: add note about meeting, search for project, summarize..." rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat()}"></textarea>
       <button class="btn btn-p send" onclick="sendChat()">Send</button>
@@ -419,19 +419,19 @@ async function sendChat(){
     const d=await api('/chat','POST',{message:msg});
     let resp=d.message;
     if(d.type==='search_results'&&d.results){
-      resp+='\n\n'+d.results.map(r=>`  - ${r.title} (${r.type})`).join('\n');
+      resp+='\\n\\n'+d.results.map(r=>`  - ${r.title} (${r.type})`).join('\\n');
     }
     if(d.type==='summary'&&d.stats){
-      resp+='\n\nNotes: '+d.stats.notes+' | Bookmarks: '+d.stats.bookmarks+'\nTags: '+d.stats.tags.join(', ');
+      resp+='\\n\\nNotes: '+d.stats.notes+' | Bookmarks: '+d.stats.bookmarks+'\\nTags: '+d.stats.tags.join(', ');
     }
     if(d.type==='connections'&&d.connections){
-      resp+='\n\n'+d.connections.map(c=>`  ${c.from} <-> ${c.to} (${c.shared.join(', ')})`).join('\n');
+      resp+='\\n\\n'+d.connections.map(c=>`  ${c.from} <-> ${c.to} (${c.shared.join(', ')})`).join('\\n');
     }
     if(d.type==='help'&&d.commands){
-      resp+='\n\n'+d.commands.map(c=>`  ${c.cmd} - ${c.desc}`).join('\n');
+      resp+='\\n\\n'+d.commands.map(c=>`  ${c.cmd} - ${c.desc}`).join('\\n');
     }
     if(d.type==='list_items'&&d.items){
-      resp+='\n\n'+d.items.map(i=>`  - ${i.title} [${i.type}]`).join('\n');
+      resp+='\\n\\n'+d.items.map(i=>`  - ${i.title} [${i.type}]`).join('\\n');
     }
     chatHist.push({role:'bot',text:resp});
     await loadItems();
