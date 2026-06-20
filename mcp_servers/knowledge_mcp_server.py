@@ -21,6 +21,7 @@ class KnowledgeMCPServer:
         }
         self.sync_history = []
         self.is_initialized = False
+        self.logger = logging.getLogger(__name__)
 
     async def initialize(self) -> None:
         """Initialize all connectors."""
