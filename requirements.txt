@@ -1,32 +1,24 @@
 # Google ADK and Agent Framework
-google-adk>=0.1.0
 langchain>=0.1.0
-langchain-google-genai>=0.0.1
 
 # API Framework
 fastapi>=0.104.0
 uvicorn>=0.24.0
 pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-multipart>=0.0.6
 
 # Database
-sqlalchemy>=2.0.23
-asyncpg>=0.29.0
 redis>=5.0.1
 
 # Security
 cryptography>=41.0.7
 python-jose[cryptography]>=3.3.0
 passlib[bcrypt]>=1.7.4
-python-multipart>=0.0.6
 
 # MCP Integration
 httpx>=0.25.2
 aiohttp>=3.9.1
 
-# Semantic Search
-sentence-transformers>=2.2.2
-numpy>=1.24.3
-
 # Utilities
 python-dotenv>=1.0.0
-pydantic-settings>=2.1.0
