@@ -181,7 +181,33 @@ HTML = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>AI Knowledge Assistant</title>
+<title>AI Knowledge Assistant - Multi-Agent System with Google ADK</title>
+
+<!-- OpenGraph Meta Tags -->
+<meta property="og:title" content="AI Knowledge Assistant - Multi-Agent System with Google ADK">
+<meta property="og:description" content="Organize, search, and synthesize your knowledge with AI. Built with Google ADK, multi-agent systems, MCP servers, and security features.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://knowledge-assistant-rho.vercel.app">
+<meta property="og:image" content="https://raw.githubusercontent.com/PremJibon/kaggle_submit/main/thumbnail.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Knowledge Assistant Dashboard">
+<meta property="og:site_name" content="AI Knowledge Assistant">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Knowledge Assistant - Multi-Agent System with Google ADK">
+<meta name="twitter:description" content="Organize, search, and synthesize your knowledge with AI. Built with Google ADK, multi-agent systems, MCP servers, and security features.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/PremJibon/kaggle_submit/main/thumbnail.png">
+<meta name="twitter:image:alt" content="AI Knowledge Assistant Dashboard">
+
+<!-- Additional Meta -->
+<meta name="description" content="AI Personal Knowledge Assistant - A multi-agent system for organizing, retrieving, and synthesizing information. Built with Google ADK, FastAPI, and deployed on Vercel.">
+<meta name="keywords" content="AI, Knowledge Assistant, Multi-Agent System, Google ADK, MCP, FastAPI, Vercel, Kaggle Capstone">
+<meta name="author" content="PremJibon">
+<meta name="theme-color" content="#0B0D14">
+<link rel="canonical" href="https://knowledge-assistant-rho.vercel.app">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#fafafa;min-height:100vh}
