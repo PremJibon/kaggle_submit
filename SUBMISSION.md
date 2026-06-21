@@ -153,9 +153,9 @@ The project showcases practical application of agent development concepts while 
 
 ## Contact
 
-**Author**: [Your Name]  
-**Email**: [Your Email]  
-**GitHub**: [Your GitHub]
+**Author**: PremJibon  
+**GitHub**: https://github.com/PremJibon  
+**Kaggle**: https://www.kaggle.com/premjibon
 
 ## License
 
